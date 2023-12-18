@@ -1,0 +1,1627 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Global_EventSheet</name>
+    <events>
+        <variable constant="0" name="VarGemGlobal" sid="499624783113031" static="0" type="number">0</variable>
+        <variable comment="Nyawa" constant="0" name="VarHeartGlobal" sid="454536481379453" static="0" type="number">3</variable>
+        <variable constant="0" name="VarQuestionTrueGlobal" sid="304529245698610" static="0" type="number">0</variable>
+        <variable constant="0" name="VarKeyboardGlobal" sid="637590833959749" static="0" type="number">1</variable>
+        <variable constant="0" name="IDGame" sid="144687395715764" static="0" type="number">0</variable>
+        <variable constant="0" name="JawabanSoal" sid="936539365618415" static="0" type="number">0</variable>
+        <variable constant="0" name="PilihanJawaban" sid="882405357703604" static="0" type="number">0</variable>
+        <event-group description="" sid="493205052247451" title="Soal Group" />
+        <event-block sid="617945878867316">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="543696772620373" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="770776308413113" type="Function">
+                    <param id="0" name="Name">&quot;SetDataSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="486288082478503" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Call function" sid="938721218185603" type="Function">
+                    <param id="0" name="Name">&quot;SetDataRandomSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="514023164532476" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Call function" sid="249037556966733" type="Function">
+                    <param id="0" name="Name">&quot;SetSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="620507327742717">
+            <conditions>
+                <condition id="0" name="On function" sid="153356144626816" type="Function">
+                    <param id="0" name="Name">&quot;SetDataSoal&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Clear" sid="608594110524273" type="DataSoal" />
+                <action id="1" name="Set size" sid="629106310973194" type="DataSoal">
+                    <param id="0" name="Width">10</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+                <action id="2" name="Set at X" sid="635225342570797" type="DataSoal">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="2" name="Set at X" sid="147463761519132" type="DataSoal">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="2" name="Set at X" sid="502743233380464" type="DataSoal">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="2" name="Set at X" sid="230515888757777" type="DataSoal">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="2" name="Set at X" sid="111912550903674" type="DataSoal">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="2" name="Set at X" sid="193313772088455" type="DataSoal">
+                    <param id="0" name="X">5</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="2" name="Set at X" sid="215214452049951" type="DataSoal">
+                    <param id="0" name="X">6</param>
+                    <param id="1" name="Value">7</param>
+                </action>
+                <action id="2" name="Set at X" sid="303391433598859" type="DataSoal">
+                    <param id="0" name="X">7</param>
+                    <param id="1" name="Value">8</param>
+                </action>
+                <action id="2" name="Set at X" sid="210082175663959" type="DataSoal">
+                    <param id="0" name="X">8</param>
+                    <param id="1" name="Value">9</param>
+                </action>
+                <action id="2" name="Set at X" sid="738049317902269" type="DataSoal">
+                    <param id="0" name="X">9</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="882623003786629">
+            <conditions>
+                <condition id="0" name="On function" sid="577646523715056" type="Function">
+                    <param id="0" name="Name">&quot;SetDataRandomSoal&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Clear" sid="864811889093546" type="DataAcak" />
+                <action id="1" name="Set size" sid="307800318032299" type="DataAcak">
+                    <param id="0" name="Width">4</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <variable constant="0" name="VarRand" sid="450305155247325" static="0" type="number">0</variable>
+                <event-block sid="672438841878189">
+                    <conditions>
+                        <condition id="-10" name="For" sid="142664982728432" type="System">
+                            <param id="0" name="Name">&quot;RandomSoal&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="650568363307724" type="System">
+                            <param id="0" name="Variable">VarRand</param>
+                            <param id="1" name="Value">int(random(1,DataSoal.Width+1))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="539565055612914">
+                            <conditions>
+                                <condition id="-23" name="While" sid="894469421367506" type="System" />
+                                <condition id="5" name="Contains value" sid="917881108924518" type="DataAcak">
+                                    <param id="0" name="Value">VarRand</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="218494825105854" type="System">
+                                    <param id="0" name="Variable">VarRand</param>
+                                    <param id="1" name="Value">int(random(1,DataSoal.Width+1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="272818947203109">
+                            <conditions />
+                            <actions>
+                                <action id="2" name="Set at X" sid="708848945498368" type="DataAcak">
+                                    <param id="0" name="X">loopindex(&quot;RandomSoal&quot;)</param>
+                                    <param id="1" name="Value">VarRand</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="132548633631857">
+            <conditions>
+                <condition id="0" name="On function" sid="971101492265599" type="Function">
+                    <param id="0" name="Name">&quot;SetSoal&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="843240904968803" type="System">
+                    <param id="0" name="Variable">JawabanSoal</param>
+                    <param id="1" name="Value">DataAcak.At(0)</param>
+                </action>
+                <action id="-9" name="Set value" sid="200685129302162" type="System">
+                    <param id="0" name="Variable">PilihanJawaban</param>
+                    <param id="1" name="Value">choose(1,2,3,4)</param>
+                </action>
+                <action id="0" name="Call function" sid="835297113373557" type="Function">
+                    <param id="0" name="Name">&quot;SetTulisanSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="940891337575169">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="136921779139372" type="System">
+                            <param id="0" name="Variable">PilihanJawaban</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="126501519201035">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="191553991770157" type="TextJawaban">
+                                    <param id="0" name="Unique ID">158</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="894062808410120" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(0)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="666999969689248">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="458634409271031" type="TextJawaban">
+                                    <param id="0" name="Unique ID">159</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="979168149355844" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(1)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="445717978160620">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="482634538390541" type="TextJawaban">
+                                    <param id="0" name="Unique ID">160</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="753214646651498" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(2)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="296246788179950">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="632861021062124" type="TextJawaban">
+                                    <param id="0" name="Unique ID">161</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="144045838223936" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(3)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="548979105966593">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="367614972176523" type="System">
+                            <param id="0" name="Variable">PilihanJawaban</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="773515873920293">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="962142770898386" type="TextJawaban">
+                                    <param id="0" name="Unique ID">158</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="577091907622541" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(1)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="801197513882919">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="672752353343553" type="TextJawaban">
+                                    <param id="0" name="Unique ID">159</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="382820163369498" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(0)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="191697654694122">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="806163319344815" type="TextJawaban">
+                                    <param id="0" name="Unique ID">160</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="772117319416620" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(3)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="457607612354584">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="778448206637455" type="TextJawaban">
+                                    <param id="0" name="Unique ID">161</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="812772939232828" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(2)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="315778434602245">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="754023999855142" type="System">
+                            <param id="0" name="Variable">PilihanJawaban</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="363273047544989">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="856099649540850" type="TextJawaban">
+                                    <param id="0" name="Unique ID">158</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="706451134861175" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(2)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="378145378930437">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="877436870803045" type="TextJawaban">
+                                    <param id="0" name="Unique ID">159</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="965885235908682" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(3)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="675315032046732">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="395650321657244" type="TextJawaban">
+                                    <param id="0" name="Unique ID">160</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="669473567155309" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(0)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="651920178761802">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="214907821521454" type="TextJawaban">
+                                    <param id="0" name="Unique ID">161</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="129274256383405" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(1)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="374393511988209">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="825765909060544" type="System">
+                            <param id="0" name="Variable">PilihanJawaban</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="618191968716092">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="336160881233323" type="TextJawaban">
+                                    <param id="0" name="Unique ID">158</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="859845477652444" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(2)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="269155334530184">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="773994167141108" type="TextJawaban">
+                                    <param id="0" name="Unique ID">159</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="592369978019305" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(3)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="869742127338565">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="936753752460333" type="TextJawaban">
+                                    <param id="0" name="Unique ID">160</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="749100488171857" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(1)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="819509556909908">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="356118991156860" type="TextJawaban">
+                                    <param id="0" name="Unique ID">161</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="791135243921501" type="TextJawaban">
+                                    <param id="0" name="Text">DataSoal.At(int(DataAcak.At(0)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <variable constant="0" name="SelectedSoal" sid="896805761355938" static="0" type="number">0</variable>
+        <event-block sid="199168959907012">
+            <conditions>
+                <condition id="0" name="On function" sid="750913717928026" type="Function">
+                    <param id="0" name="Name">&quot;SetTulisanSoal&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="674692986429515">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="745052654133710" type="System">
+                            <param id="0" name="Variable">JawabanSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="160834562343394" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Value">int(random(1,2))</param>
+                        </action>
+                        <action id="0" name="Call function" sid="133564637719274" type="Function">
+                            <param id="0" name="Name">&quot;SetSoalJawaban1&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="798186925011038">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="948818707897875" type="System">
+                            <param id="0" name="Variable">JawabanSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="352964913410789" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Value">int(random(1,3))</param>
+                        </action>
+                        <action id="0" name="Call function" sid="348496251477385" type="Function">
+                            <param id="0" name="Name">&quot;SetSoalJawaban2&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="936469731403504">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="449355027303389" type="System">
+                            <param id="0" name="Variable">JawabanSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="279236047835442" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Value">int(random(1,4))</param>
+                        </action>
+                        <action id="0" name="Call function" sid="219581440167350" type="Function">
+                            <param id="0" name="Name">&quot;SetSoalJawaban3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="938677358166455">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="943461801868514" type="System">
+                            <param id="0" name="Variable">JawabanSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="909581285593532" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Value">int(random(1,5))</param>
+                        </action>
+                        <action id="0" name="Call function" sid="144103568324363" type="Function">
+                            <param id="0" name="Name">&quot;SetSoalJawaban4&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="128433408351990">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="335487633710556" type="System">
+                            <param id="0" name="Variable">JawabanSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="125720914661244" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Value">int(random(1,6))</param>
+                        </action>
+                        <action id="0" name="Call function" sid="113509599410714" type="Function">
+                            <param id="0" name="Name">&quot;SetSoalJawaban5&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="896639566116186">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="223117315814127" type="System">
+                            <param id="0" name="Variable">JawabanSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="712103731733213" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Value">int(random(1,7))</param>
+                        </action>
+                        <action id="0" name="Call function" sid="399060279151491" type="Function">
+                            <param id="0" name="Name">&quot;SetSoalJawaban6&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="529000390450384">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="572183388811305" type="System">
+                            <param id="0" name="Variable">JawabanSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="445207670849937" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Value">int(random(1,8))</param>
+                        </action>
+                        <action id="0" name="Call function" sid="198137195762275" type="Function">
+                            <param id="0" name="Name">&quot;SetSoalJawaban7&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="713921238833346">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="326882894190481" type="System">
+                            <param id="0" name="Variable">JawabanSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="331578900236619" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Value">int(random(1,9))</param>
+                        </action>
+                        <action id="0" name="Call function" sid="875997294438153" type="Function">
+                            <param id="0" name="Name">&quot;SetSoalJawaban8&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="476337517879066">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="150020757033914" type="System">
+                            <param id="0" name="Variable">JawabanSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="625018435448539" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Value">int(random(1,10))</param>
+                        </action>
+                        <action id="0" name="Call function" sid="985731671839692" type="Function">
+                            <param id="0" name="Name">&quot;SetSoalJawaban9&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="988604861881281">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="644165396359404" type="System">
+                            <param id="0" name="Variable">JawabanSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="116284600940729" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Value">int(random(1,11))</param>
+                        </action>
+                        <action id="0" name="Call function" sid="930244384243986" type="Function">
+                            <param id="0" name="Name">&quot;SetSoalJawaban10&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="336579631888938">
+            <conditions>
+                <condition id="0" name="On function" sid="842352336002935" type="Function">
+                    <param id="0" name="Name">&quot;SetSoalJawaban1&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="423199893901969">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="208488489307216" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="670890334520041" type="TextSoal">
+                            <param id="0" name="Text">&quot;0 + 1 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="338540982115150">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="810507229750174" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="452892361459128" type="TextSoal">
+                            <param id="0" name="Text">&quot;1 + 0 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="427144670904054">
+            <conditions>
+                <condition id="0" name="On function" sid="451717937869740" type="Function">
+                    <param id="0" name="Name">&quot;SetSoalJawaban2&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="868129515548138">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="902113900192029" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="786686135110857" type="TextSoal">
+                            <param id="0" name="Text">&quot;1 + 1 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="896559467433681">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="949980161507062" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="992376392780501" type="TextSoal">
+                            <param id="0" name="Text">&quot;2 + 0 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="276440806581416">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="448294251290391" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="239146035813117" type="TextSoal">
+                            <param id="0" name="Text">&quot;0 + 2 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="452840649533315">
+            <conditions>
+                <condition id="0" name="On function" sid="833434694257330" type="Function">
+                    <param id="0" name="Name">&quot;SetSoalJawaban3&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="238288354815068">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="907736058127400" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="876255125515721" type="TextSoal">
+                            <param id="0" name="Text">&quot;1 + 2 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="556997499730708">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="281524028641180" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="277088493282020" type="TextSoal">
+                            <param id="0" name="Text">&quot;2 + 1 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="723858734762898">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="317377080889849" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="680648869639107" type="TextSoal">
+                            <param id="0" name="Text">&quot;0 + 3 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="590544020246741">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="874769630953522" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="185767698510527" type="TextSoal">
+                            <param id="0" name="Text">&quot;0 + 3 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="384407918259581">
+            <conditions>
+                <condition id="0" name="On function" sid="118113139508782" type="Function">
+                    <param id="0" name="Name">&quot;SetSoalJawaban4&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="531391110596680">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="408342443683418" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="322808985468842" type="TextSoal">
+                            <param id="0" name="Text">&quot;2 + 2 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="414563240703014">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="746905712404357" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="331687189019981" type="TextSoal">
+                            <param id="0" name="Text">&quot;3 + 1 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="538254876116422">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="563649479723182" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="305438935303511" type="TextSoal">
+                            <param id="0" name="Text">&quot;1 + 3 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="365940449778380">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="422998344349880" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="833997093783909" type="TextSoal">
+                            <param id="0" name="Text">&quot;0 + 4 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="803280035821679">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="229426515212258" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="987366409897206" type="TextSoal">
+                            <param id="0" name="Text">&quot;4 + 0 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="881463416783491">
+            <conditions>
+                <condition id="0" name="On function" sid="793298836516807" type="Function">
+                    <param id="0" name="Name">&quot;SetSoalJawaban5&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="872155607869364">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="995449024238310" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="702843455596996" type="TextSoal">
+                            <param id="0" name="Text">&quot;2 + 3 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="584227293367287">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="908845705286055" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="219655575654387" type="TextSoal">
+                            <param id="0" name="Text">&quot;3 + 2 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="627762743156359">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="316248971951865" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="653182763990969" type="TextSoal">
+                            <param id="0" name="Text">&quot;1 + 4 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="977633358765096">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="697713640903556" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="114419425603797" type="TextSoal">
+                            <param id="0" name="Text">&quot;4 + 1 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="554338308216879">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="594644580986709" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="336330818497689" type="TextSoal">
+                            <param id="0" name="Text">&quot;5 + 0 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="724877219171107">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="574491260539473" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="992120056337250" type="TextSoal">
+                            <param id="0" name="Text">&quot;0 + 5 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="742735102167262">
+            <conditions>
+                <condition id="0" name="On function" sid="361292180042610" type="Function">
+                    <param id="0" name="Name">&quot;SetSoalJawaban6&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="245899407162002">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="795603028640889" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="585857371685478" type="TextSoal">
+                            <param id="0" name="Text">&quot;3 + 3 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="346795482573658">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="989776445414421" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="802438514308507" type="TextSoal">
+                            <param id="0" name="Text">&quot;4 + 2 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="811933780451424">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="524135847621018" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="490968482870459" type="TextSoal">
+                            <param id="0" name="Text">&quot;2 + 4 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="402999571772242">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="571436883872877" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="796605605523783" type="TextSoal">
+                            <param id="0" name="Text">&quot;5 + 1 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="204287196741525">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="700056889080754" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="616758446460701" type="TextSoal">
+                            <param id="0" name="Text">&quot;1 + 5 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="143205120851570">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="155118263823118" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="684917031320545" type="TextSoal">
+                            <param id="0" name="Text">&quot;6 + 0 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="452058963367638">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="520422411302565" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="867082045355134" type="TextSoal">
+                            <param id="0" name="Text">&quot;0 + 6 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="812149634873754">
+            <conditions>
+                <condition id="0" name="On function" sid="517925888018699" type="Function">
+                    <param id="0" name="Name">&quot;SetSoalJawaban7&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="801336701185980">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="618843846537786" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="638632233737386" type="TextSoal">
+                            <param id="0" name="Text">&quot;3 + 4 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="532284059836268">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="579123871908056" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="254912400840708" type="TextSoal">
+                            <param id="0" name="Text">&quot;4 + 3 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="384157114517993">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="344117800027375" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="965257864814847" type="TextSoal">
+                            <param id="0" name="Text">&quot;2 + 5 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="544950544565677">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="960895127890987" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="719704989032065" type="TextSoal">
+                            <param id="0" name="Text">&quot;5 + 2 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="771547278796776">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="974010486107547" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="869324963196210" type="TextSoal">
+                            <param id="0" name="Text">&quot;1 + 6 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="403305802123879">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="128496714956492" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="620585577020354" type="TextSoal">
+                            <param id="0" name="Text">&quot;6 + 1 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="739614508644418">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="377106977284729" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="112693086607110" type="TextSoal">
+                            <param id="0" name="Text">&quot;0 + 7 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="362686177008405">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="258055836189546" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="703523274140147" type="TextSoal">
+                            <param id="0" name="Text">&quot;7 + 0 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="896522263359560">
+            <conditions>
+                <condition id="0" name="On function" sid="932208916636689" type="Function">
+                    <param id="0" name="Name">&quot;SetSoalJawaban8&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="884180645924545">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="375583145934302" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="460519045882213" type="TextSoal">
+                            <param id="0" name="Text">&quot;4 + 4 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="764952122194769">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="973177772885639" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="566485368828174" type="TextSoal">
+                            <param id="0" name="Text">&quot;3 + 5 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="510395112456110">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="186876318820682" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="157671595655660" type="TextSoal">
+                            <param id="0" name="Text">&quot;5 + 3 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="129130290726368">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="756524588024065" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="159810251859778" type="TextSoal">
+                            <param id="0" name="Text">&quot;2 + 6 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="509776768920538">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="967091379256086" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="596375930402540" type="TextSoal">
+                            <param id="0" name="Text">&quot;6 + 2 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="531447480442146">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="972722359756153" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="630711298763246" type="TextSoal">
+                            <param id="0" name="Text">&quot;1 + 7 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="689069756315005">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="816509660955617" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="815644800676647" type="TextSoal">
+                            <param id="0" name="Text">&quot;7 + 1 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="177115066075959">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="887097025952663" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="256542738729871" type="TextSoal">
+                            <param id="0" name="Text">&quot;8 + 0 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="447765123860579">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="829881221099193" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="584945652499324" type="TextSoal">
+                            <param id="0" name="Text">&quot;0 + 8 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="512557222479211">
+            <conditions>
+                <condition id="0" name="On function" sid="581898087670880" type="Function">
+                    <param id="0" name="Name">&quot;SetSoalJawaban9&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="811939448183787">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="774917752943000" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="156265569210795" type="TextSoal">
+                            <param id="0" name="Text">&quot;4 + 5 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="920166959618725">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="851065883905469" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="662985194774219" type="TextSoal">
+                            <param id="0" name="Text">&quot;5 + 4 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="595658793974665">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="427295623071098" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="605620945263741" type="TextSoal">
+                            <param id="0" name="Text">&quot;6 + 3 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="407921346513858">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="742206598439018" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="942679697865741" type="TextSoal">
+                            <param id="0" name="Text">&quot;3 + 6 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="598338852253011">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="626945679980553" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="364107160574551" type="TextSoal">
+                            <param id="0" name="Text">&quot;7 + 2 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="921421993015871">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="380421616535083" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="815679485555057" type="TextSoal">
+                            <param id="0" name="Text">&quot;2+ 7 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="948657261384959">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="402958407064585" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="697792993169189" type="TextSoal">
+                            <param id="0" name="Text">&quot;8 + 1 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="360228459061171">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="226216498200852" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="598933179303077" type="TextSoal">
+                            <param id="0" name="Text">&quot;1+ 8 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="600620866178036">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="450535596854315" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="571490051472458" type="TextSoal">
+                            <param id="0" name="Text">&quot;0 + 9 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="632177539837348">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="877991053922845" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="223976374680710" type="TextSoal">
+                            <param id="0" name="Text">&quot;9 + 0 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="548475658440469">
+            <conditions>
+                <condition id="0" name="On function" sid="343760470082552" type="Function">
+                    <param id="0" name="Name">&quot;SetSoalJawaban10&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="901684788869726">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="973975390610461" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="251981575287113" type="TextSoal">
+                            <param id="0" name="Text">&quot;5 + 5 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="996839525399513">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="707111806105385" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="841370261948827" type="TextSoal">
+                            <param id="0" name="Text">&quot;6 + 4 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="414417362025624">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="138638818718944" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="761701836015427" type="TextSoal">
+                            <param id="0" name="Text">&quot;4 + 6 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="590592335026731">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="734446440690203" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="598261443678688" type="TextSoal">
+                            <param id="0" name="Text">&quot;3 + 7 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="213261871066513">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="491367763286162" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="285920277454249" type="TextSoal">
+                            <param id="0" name="Text">&quot;7 + 3 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="800432550853092">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="613761259886337" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="601198939082564" type="TextSoal">
+                            <param id="0" name="Text">&quot;2 + 8 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="480306992293422">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="842127023037788" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="333693072347416" type="TextSoal">
+                            <param id="0" name="Text">&quot;8 + 2 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="829117472475233">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="461221700709308" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="375533465051670" type="TextSoal">
+                            <param id="0" name="Text">&quot;1+ 9 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="248305789884198">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="538931045859069" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="740168097908692" type="TextSoal">
+                            <param id="0" name="Text">&quot;9 + 1 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="888001139545526">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="118724883058955" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="158203863189411" type="TextSoal">
+                            <param id="0" name="Text">&quot;10 + 0 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="523653903425882">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="795194745886263" type="System">
+                            <param id="0" name="Variable">SelectedSoal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="644183131017186" type="TextSoal">
+                            <param id="0" name="Text">&quot;0 + 10 = ... ?&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
