@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game1_EventSheet</name>
+    <events>
+        <include>Global_EventSheet</include>
+        <variable constant="0" name="VarQuestionTrue" sid="692091419166922" static="0" type="number">0</variable>
+        <variable constant="0" name="VarKeyboard" sid="136684118734103" static="0" type="number">1</variable>
+        <event-group description="" sid="533726088334120" title="Player Animation Group" />
+        <event-block sid="903390452551293">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="326740909760354" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="951310037706100" type="Player">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="128830635815393">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="621466068625278" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="103644293966798" type="Player">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="744905174045811">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="550838689131388" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="404282505206873" type="Player">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="217963838283631" type="Audio">
+                    <param id="0" name="Audio file">Jump_1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="321269209329464">
+            <conditions>
+                <condition behavior="Platform" id="6" name="On fall" sid="260550117662538" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="791924798062715" type="Player">
+                    <param id="0" name="Animation">&quot;Fall&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="399556046641047" type="Audio">
+                    <param id="0" name="Audio file">Jump_2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="300171427315281">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="535510379769833" type="Player" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="310721818378082">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="258656374978160" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="576238183885272" type="Player">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="777962547053250">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="172540985917127" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="352006637012076" type="Player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="141396857723331" title="Controller HUD Group" />
+        <event-block any="1" sid="586947244447474">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="437226911373558" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="268093735280842" type="Touch">
+                    <param id="0" name="Object">tbKiri</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="767138334235177" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="729579782168239" type="Player">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="9" name="Set scale" sid="485684310109717" type="tbKiri">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="790329552151341">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="675713416487676" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="540487815020241" type="Touch">
+                    <param id="0" name="Object">tbKanan</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="647081326737344" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="922824752410241" type="Player">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="9" name="Set scale" sid="264245943181101" type="tbKanan">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="635743062295407">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="716379609880616" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="380288680016611" type="Touch">
+                    <param id="0" name="Object">tbLompat</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="684036372634156" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action id="9" name="Set scale" sid="344595547029320" type="tbLompat">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+                <action id="0" name="Play" sid="717035373080899" type="Audio">
+                    <param id="0" name="Audio file">Jump_2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="558428957642663">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="453393132177242" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="276177389747998" type="tbKiri">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="9" name="Set scale" sid="447730871967726" type="tbKanan">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="9" name="Set scale" sid="904336053248351" type="tbLompat">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="694543038110666" title="Enemy Collision Group" />
+        <event-block sid="850861218033363">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="475998847896062" type="enemyWalking_" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="124814983319959">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="756113960131171" type="enemyWalking_">
+                            <param id="0" name="Instance variable">VMove</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;VRight&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="771824807980430" type="enemyWalking_">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="876514842699071">
+                            <conditions>
+                                <condition behavior="Platform" id="10" name="Is by wall" sid="959575400573060" type="enemyWalking_">
+                                    <param id="0" name="Side">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="678207606420816" type="enemyWalking_">
+                                    <param id="0" name="Instance variable">VMove</param>
+                                    <param id="1" name="Value">&quot;VLeft&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="854484301814826">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="699713083317767" type="enemyWalking_">
+                            <param id="0" name="Instance variable">VMove</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;VLeft&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="654580324453434" type="enemyWalking_">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="265447860880996">
+                            <conditions>
+                                <condition behavior="Platform" id="10" name="Is by wall" sid="880251206832321" type="enemyWalking_">
+                                    <param id="0" name="Side">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="611576702404096" type="enemyWalking_">
+                                    <param id="0" name="Instance variable">VMove</param>
+                                    <param id="1" name="Value">&quot;VRight&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="988018667080650">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="381721518534095" type="enemySwimming_" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="598220923267427" type="enemySwimming_">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="187449008284535">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="364943349809904" type="Player">
+                    <param id="0" name="Object">enemyFloating_</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="791824209626960" type="Player">
+                    <param id="0" name="Object">enemyFlying_</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="418404923019630" type="Player">
+                    <param id="0" name="Object">enemySpikey_</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="213004761431265" type="Player">
+                    <param id="0" name="Object">enemySwimming_</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="612158493423358" type="Player">
+                    <param id="0" name="Object">enemyWalking_</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="615622952380064">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="859834736205875" type="System">
+                            <param id="0" name="Layer">4</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="993053530991990">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="526046267822691" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="976487937429357" type="Player">
+                            <param id="0" name="&apos;On&apos; time">0.2</param>
+                            <param id="1" name="&apos;Off&apos; time">0.2</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="0" name="Play" sid="438141183608715" type="Audio">
+                            <param id="0" name="Audio file">Hurt_3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="614215752825380" type="System">
+                            <param id="0" name="Variable">VarHeartGlobal</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="134717595842509">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="407592572228973" type="Player">
+                    <param id="0" name="Object">yellowJewel</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="966887077017775" type="yellowJewel" />
+                <action id="-10" name="Add to" sid="900704542915653" type="System">
+                    <param id="0" name="Variable">VarGemGlobal</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="635839648216610" type="Audio">
+                    <param id="0" name="Audio file">Coin_4</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">50</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="588500370979259" title="Game Hitung Group" />
+        <event-block sid="397825663964153">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="643026744901892" type="Player">
+                    <param id="0" name="Object">Mushroom_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="102662612094430" type="Audio">
+                    <param id="0" name="Audio file">1up-New Life_4</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="623884775325440" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="355257645272829" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="852088800025848">
+                    <conditions>
+                        <condition id="5" name="Is tag playing" sid="202386357623736" type="Audio">
+                            <param id="0" name="Tag">&quot;Music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="413468227308056" type="Audio">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="100187606840509" type="Audio">
+                            <param id="0" name="Audio file">Puzzles</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="372697431058162">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="923277987026192" type="Player">
+                    <param id="0" name="Object">Mushroom_2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="138239645446219" type="Audio">
+                    <param id="0" name="Audio file">1up-New Life_4</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="964861650199365" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="840577894216192" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="870360347695609">
+                    <conditions>
+                        <condition id="5" name="Is tag playing" sid="302032415841703" type="Audio">
+                            <param id="0" name="Tag">&quot;Music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="711812046239120" type="Audio">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="217765714988427" type="Audio">
+                            <param id="0" name="Audio file">Puzzles</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="327279488467200">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="529251818694197" type="Player">
+                    <param id="0" name="Object">Mushroom_3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="117989110009947" type="Audio">
+                    <param id="0" name="Audio file">1up-New Life_4</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="996163663429921" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="123566941757730" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="124277367159388">
+                    <conditions>
+                        <condition id="5" name="Is tag playing" sid="327418398208352" type="Audio">
+                            <param id="0" name="Tag">&quot;Music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="973897091801962" type="Audio">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="271715500797035" type="Audio">
+                            <param id="0" name="Audio file">Puzzles</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="553303271996956">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="766396422092973" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="655317377899462" type="TextGem">
+                    <param id="0" name="Text">VarGemGlobal</param>
+                </action>
+                <action id="0" name="Set text" sid="269264349473244" type="TextHeart">
+                    <param id="0" name="Text">VarHeartGlobal</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="837258514906737" title="Pop Up Layer Group" />
+        <event-block sid="593168395241606">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="576057319888713" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="569017482322428" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="169596284837333" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="209406412330293">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="618885579734197" type="Player">
+                    <param id="0" name="Instance variable">VarAnswerTrue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="672830095357237" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="551680485064973" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="865463253184907" type="complete">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="825744799021796" type="gameover">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="555113453417472" title="Restart System Group" />
+        <event-block sid="518413769925850">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="802001690976618" type="System">
+                    <param id="0" name="Variable">VarHeartGlobal</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="839333555624531" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="873557966966367" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="250453539983299" type="TextComplete">
+                    <param id="0" name="Text">&quot;MISI GAGAL&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="679373599143720" type="tbKanan">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="284098551077725" type="tbKiri">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="230116922565137" type="tbLompat">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="603101774566361" type="complete">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="530577846286815" type="gameover">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="421947270807722" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="162842160320144" type="NextLevel2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="33" name="Stop all" sid="657190966045871" type="Audio" />
+                <action id="0" name="Play" sid="894049730789172" type="Audio">
+                    <param id="0" name="Audio file">Level Up 2 (miniclip)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="776907603678189">
+            <conditions>
+                <condition id="3" name="On touched object" sid="567293229650701" type="Touch">
+                    <param id="0" name="Object">TbResetGame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="836599145300548" type="System" />
+                <action id="-9" name="Set value" sid="523274190207951" type="System">
+                    <param id="0" name="Variable">VarHeartGlobal</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="863744424724083" type="System">
+                    <param id="0" name="Variable">VarGemGlobal</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="100273220838409" type="tbKanan">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="911809468735510" type="tbKiri">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="714300890866034" type="tbLompat">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="268570785764190" type="TextComplete">
+                    <param id="0" name="Text">&quot;MISI SELESAI&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="702506587302533" title="Mute Unmute Group" />
+        <event-group description="" sid="713715957717618" title="Home Menu Group" />
+        <event-block sid="863092686253344">
+            <conditions>
+                <condition id="3" name="On touched object" sid="271183204333252" type="Touch">
+                    <param id="0" name="Object">TbHome</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="317461548274163" type="System">
+                    <param id="0" name="Layout">Game_Start</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="112173821708720">
+            <conditions>
+                <condition id="3" name="On touched object" sid="309394421076424" type="Touch">
+                    <param id="0" name="Object">NextLevel2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="202691682947841" type="System">
+                    <param id="0" name="Layout">Game2_Layout</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

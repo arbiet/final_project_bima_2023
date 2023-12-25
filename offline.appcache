@@ -1,9 +1,11 @@
 ﻿CACHE MANIFEST
-#1702492667
+#1703522429
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
 images/bggame-sheet0.png
+images/bggame-sheet1.png
+images/bggame-sheet2.png
 images/bgjatuh.png
 images/tiledbackground.png
 images/tiledbackground4.png
@@ -48,9 +50,16 @@ images/buttonmulai-sheet0.png
 images/hiasandiamon-sheet0.png
 images/tiledbackground2.png
 images/textbox_blank_side-sheet0.png
-images/wideslider_blank_scroller-sheet0.png
+images/barjawabana-sheet0.png
 images/scrollbar_blank_scroller-sheet0.png
 images/textsoalke.png
+images/9patch.png
+images/imageinfo-sheet0.png
+images/sign_3-sheet0.png
+images/tiledbackground9.png
+images/tree_2-sheet0.png
+images/bush3-sheet0.png
+images/tiledbackground11.png
 media/1up-new%20life_1.m4a
 media/1up-new%20life_1.ogg
 media/1up-new%20life_2.m4a

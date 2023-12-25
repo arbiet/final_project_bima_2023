@@ -1,0 +1,1448 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Calcuboy</name>
+    <description>Calcuboy Game</description>
+    <version>1.0.0.0</version>
+    <author>Arbiet Team ( Firmansyah Mukti Wijaya)</author>
+    <author-email>sales@arbiet.my.id</author-email>
+    <author-website>http://arbiet.my.id</author-website>
+    <app-id>com.arbiet.calcuboy</app-id>
+    <unique-id>3pf0baw7oarm7</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1136</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="System">
+            <object-type name="Audio" sid="374400433907156">
+                <plugin id="Audio" />
+            </object-type>
+            <object-type name="Keyboard" sid="485294246826419">
+                <plugin id="Keyboard" />
+            </object-type>
+            <object-type name="WebStorage" sid="506289529252099">
+                <plugin id="WebStorage" />
+            </object-type>
+            <object-type name="Touch" sid="328922391291068">
+                <plugin id="Touch" />
+            </object-type>
+            <object-type name="Function" sid="961523540899093">
+                <plugin id="Function" />
+            </object-type>
+            <object-type name="Browser" sid="308673335624177">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type global="1" name="DataSoal" sid="541757615560330">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type global="1" name="DataAcak" sid="214208980071920">
+                <plugin id="Arr" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Background">
+            <object-type name="BGGame" sid="673585106907071">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="142485899616219" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\BGGame1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BGJatuh" sid="834073479261487">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="487542594153204">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-type name="TiledBackground" sid="519278502808876">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="966712875047224">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Tiles\tile2.png" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="648134501553978">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="443317759290034">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Tiles\tile13.png" />
+        </object-type>
+        <object-type name="TiledBackground5" sid="674320460791211">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="546719436282682">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Tiles\tile13.png" />
+        </object-type>
+        <object-type name="TiledBackground7" sid="407610250312421">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="780832269936970">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Tiles\tile3.png" />
+        </object-type>
+        <object-type name="TiledBackground8" sid="636754078296455">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="979535703046921">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Tiles\tile1.png" />
+        </object-type>
+        <object-type name="Player" sid="462624751964509">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="VarAnswerTrue" sid="332214224819554" type="number" />
+                <instance-variable name="VarHeartPlayer" sid="308546804542099" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="416601271097038">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="333057228965912">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="364178083102755">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="108389187555804" speed="5">
+                    <frame duration="1" hotspotX="0.50505" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Player Boy\player\Player.png" />
+                </animation>
+                <animation framecount="7" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="645286615349208" speed="8">
+                    <frame duration="1" hotspotX="0.50505" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Player Boy\player\Walk1.png" />
+                    <frame duration="1" hotspotX="0.50505" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Player Boy\player\Walk2.png" />
+                    <frame duration="1" hotspotX="0.50505" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Player Boy\player\Walk3.png" />
+                    <frame duration="1" hotspotX="0.50505" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Player Boy\player\Walk4.png" />
+                    <frame duration="1" hotspotX="0.50505" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Player Boy\player\Walk5.png" />
+                    <frame duration="1" hotspotX="0.50505" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Player Boy\player\Walk6.png" />
+                    <frame duration="1" hotspotX="0.50505" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Player Boy\player\Walk7.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="609854435281497" speed="5">
+                    <frame duration="1" hotspotX="0.50505" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Player Boy\player\JUMP.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Fall" pingpong="0" repeatcount="1" repeatto="0" sid="833287745085176" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503817" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Player Boy\player\fall.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tile" sid="996241588663120">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="460595210830087">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="461113417198058" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Tiles\tile13.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.806452" />
+                            <point x="0.304688" y="0.580645" />
+                            <point x="0" y="0.473118" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Tiles\tile14.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Tiles\tile15.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.46875" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.494624" />
+                            <point x="0.695313" y="0.580645" />
+                            <point x="0.5" y="0.806452" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tbKiri" sid="450392905303322">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="132980034010240" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\tbKiri.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tbKanan" sid="887030575591145">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="561636479735969" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\tbKanan.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tbLompat" sid="719271823238974">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="405609868373877" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\tbLompat.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemyFloating_" sid="755528987947314">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="685680479966376" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemyFloating_1.png">
+                        <collision-poly>
+                            <point x="0.0238095" y="0.025" />
+                            <point x="0.97619" y="0.025" />
+                            <point x="0.97619" y="0.975" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0238095" y="0.975" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.509091" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemyFloating_2.png">
+                        <collision-poly>
+                            <point x="0.254545" y="0.254545" />
+                            <point x="0.490909" y="0" />
+                            <point x="1" y="0.490909" />
+                            <point x="0.490909" y="1" />
+                            <point x="0.236364" y="0.763636" />
+                            <point x="0" y="0.490909" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemyFloating_3.png">
+                        <collision-poly>
+                            <point x="0.225" y="0.225" />
+                            <point x="0.5" y="0.025" />
+                            <point x="0.775" y="0.225" />
+                            <point x="1" y="0.5" />
+                            <point x="0.775" y="0.775" />
+                            <point x="0.5" y="1" />
+                            <point x="0.225" y="0.775" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemyFloating_4.png">
+                        <collision-poly>
+                            <point x="0.0238095" y="0.025" />
+                            <point x="0.97619" y="0.025" />
+                            <point x="0.97619" y="0.975" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0238095" y="0.975" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemyWalking_" sid="723562453025923">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="VMove" sid="883127117936526" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="271352981289574">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="235016088424088" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemyWalking_1.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.113636" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84375" y="0.113636" />
+                            <point x="1" y="0.5" />
+                            <point x="0.6875" y="0.772727" />
+                            <point x="0.5" y="0.977273" />
+                            <point x="0.28125" y="0.795455" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemyWalking_2.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.119048" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84375" y="0.119048" />
+                            <point x="1" y="0.5" />
+                            <point x="0.75" y="0.809524" />
+                            <point x="0.5" y="0.809524" />
+                            <point x="0.21875" y="0.833333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemyWalking_3.png">
+                        <collision-poly>
+                            <point x="0.204082" y="0.263158" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.816327" y="0.236842" />
+                            <point x="0.836735" y="0.5" />
+                            <point x="0.979592" y="0.973684" />
+                            <point x="0.489796" y="0.894737" />
+                            <point x="0.0204082" y="0.973684" />
+                            <point x="0.183673" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.512195" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemyWalking_4.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.121951" />
+                            <point x="0.485714" y="0" />
+                            <point x="0.828571" y="0.146341" />
+                            <point x="0.942857" y="0.487805" />
+                            <point x="0.971429" y="0.97561" />
+                            <point x="0.485714" y="0.829268" />
+                            <point x="0.0285714" y="0.97561" />
+                            <point x="0.0285714" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemyFlying_" sid="319710963395795">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="644063637546843">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="338916326678151">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="266544677199838" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemyFlying_1.png">
+                        <collision-poly>
+                            <point x="0.109375" y="0.184211" />
+                            <point x="0.5" y="0.368421" />
+                            <point x="0.890625" y="0.184211" />
+                            <point x="0.734375" y="0.5" />
+                            <point x="0.734375" y="0.552632" />
+                            <point x="0.5" y="1" />
+                            <point x="0.265625" y="0.552632" />
+                            <point x="0.265625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemyFlying_2.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.368421" />
+                            <point x="0.78125" y="0.368421" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.734375" y="0.552632" />
+                            <point x="0.5" y="1" />
+                            <point x="0.265625" y="0.552632" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemyFlying_3.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.418605" />
+                            <point x="0.5" y="0.325581" />
+                            <point x="0.71875" y="0.418605" />
+                            <point x="0.734375" y="0.488372" />
+                            <point x="0.734375" y="0.604651" />
+                            <point x="0.5" y="0.883721" />
+                            <point x="0.265625" y="0.604651" />
+                            <point x="0.265625" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemyFlying_4.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.36" />
+                            <point x="0.5" y="0.04" />
+                            <point x="0.85" y="0.36" />
+                            <point x="0.966667" y="0.48" />
+                            <point x="0.866667" y="0.68" />
+                            <point x="0.5" y="1" />
+                            <point x="0.133333" y="0.68" />
+                            <point x="0.0333333" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemySwimming_" sid="626453143097891">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="967484663176700">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="125789046445326" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemySwimming_1.png">
+                        <collision-poly>
+                            <point x="0.0454545" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.886364" y="0.15625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.886364" y="0.84375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0454545" y="0.9375" />
+                            <point x="0.227273" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemySwimming_2.png">
+                        <collision-poly>
+                            <point x="0.295455" y="0.40625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.886364" y="0.15625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.886364" y="0.84375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.295455" y="0.59375" />
+                            <point x="0.0454545" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemySwimming_3.png">
+                        <collision-poly>
+                            <point x="0.282609" y="0.40625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.891304" y="0.15625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.891304" y="0.84375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.282609" y="0.59375" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemySpikey_" sid="232930773234312">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="179691037647118" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemySpikey_1.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.3" />
+                            <point x="0.5" y="0" />
+                            <point x="0.625" y="0.3" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.96875" y="0.975" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.975" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemySpikey_2.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.178571" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84375" y="0.178571" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.964286" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.964286" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemySpikey_3.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.1875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.625" y="0.1875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.984375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.984375" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Enemies\enemySpikey_4.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.3" />
+                            <point x="0.5" y="0" />
+                            <point x="0.625" y="0.3" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.96875" y="0.975" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.975" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sign_" sid="268430327014162">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="418359501674145" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Object\Sign_2.png">
+                        <collision-poly>
+                            <point x="0.209677" y="0.203125" />
+                            <point x="0.5" y="0.203125" />
+                            <point x="0.758065" y="0.234375" />
+                            <point x="0.758065" y="0.5" />
+                            <point x="0.580645" y="0.59375" />
+                            <point x="0.5" y="0.546875" />
+                            <point x="0.209677" y="0.796875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mushroom_" sid="794381585233727">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="211392712192652" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Object\Mushroom_2.png">
+                        <collision-poly>
+                            <point x="0.14" y="0.170732" />
+                            <point x="0.5" y="0" />
+                            <point x="0.86" y="0.170732" />
+                            <point x="0.98" y="0.487805" />
+                            <point x="0.82" y="0.780488" />
+                            <point x="0.5" y="1" />
+                            <point x="0.18" y="0.780488" />
+                            <point x="0.02" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mushroom_2" sid="738243008904539">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="425959746018042" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.512195" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Object\Mushroom_1.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.170732" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.857143" y="0.170732" />
+                            <point x="1" y="0.487805" />
+                            <point x="0.816327" y="0.780488" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.183673" y="0.780488" />
+                            <point x="0.0204082" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bush" sid="645056463439151">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725917598852526" speed="5">
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Object\Bush (4).png">
+                        <collision-poly>
+                            <point x="0.205479" y="0.326087" />
+                            <point x="0.493151" y="0" />
+                            <point x="0.794521" y="0.326087" />
+                            <point x="0.931507" y="0.5" />
+                            <point x="0.972603" y="0.956522" />
+                            <point x="0.493151" y="1" />
+                            <point x="0.0273973" y="0.956522" />
+                            <point x="0.0958904" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bush2" sid="470595388624469">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="207953591294067" speed="5">
+                    <frame duration="1" hotspotX="0.503759" hotspotY="0.507692" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Object\Bush (2).png">
+                        <collision-poly>
+                            <point x="0.135338" y="0.276923" />
+                            <point x="0.496241" y="0.0153846" />
+                            <point x="0.879699" y="0.246154" />
+                            <point x="0.932331" y="0.492308" />
+                            <point x="0.992481" y="0.984615" />
+                            <point x="0.496241" y="1" />
+                            <point x="0.0075188" y="0.984615" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tree_" sid="717230156484134">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="375496390593516" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501818" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Object\Tree_3.png">
+                        <collision-poly>
+                            <point x="0.163121" y="0.167273" />
+                            <point x="0.5" y="0.0218182" />
+                            <point x="0.861702" y="0.141818" />
+                            <point x="0.858156" y="0.498182" />
+                            <point x="0.58156" y="0.570909" />
+                            <point x="0.5" y="1" />
+                            <point x="0.411348" y="0.578182" />
+                            <point x="0.113475" y="0.498182" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Stone" sid="965722665838889">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392553837224816" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Object\Stone.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.333333" />
+                            <point x="0.5" y="0.0185185" />
+                            <point x="0.833333" y="0.277778" />
+                            <point x="0.922222" y="0.5" />
+                            <point x="0.988889" y="0.981481" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0111111" y="0.981481" />
+                            <point x="0.1" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sign_2" sid="695375156878474">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724160668132292" speed="5">
+                    <frame duration="1" hotspotX="0.507937" hotspotY="0.507692" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Object\Sign_1.png">
+                        <collision-poly>
+                            <point x="0.015873" y="0.0153846" />
+                            <point x="0.984127" y="0.0153846" />
+                            <point x="0.984127" y="0.492308" />
+                            <point x="0.68254" y="0.692308" />
+                            <point x="0.492063" y="1" />
+                            <point x="0.31746" y="0.692308" />
+                            <point x="0.015873" y="0.492308" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gems" sid="436641254746358">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="897010431096575" speed="5">
+                    <frame duration="1" hotspotX="0.503311" hotspotY="0.506757" original-source="C:\Users\ikimu\Downloads\Basic_GUI_Bundle\Icons\Icon_Small_Diamond.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.188679" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854839" y="0.169811" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.806452" y="0.773585" />
+                            <point x="0.5" y="1" />
+                            <point x="0.209677" y="0.754717" />
+                            <point x="0.0322581" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextGem" sid="145539669026483">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="hudHeart_full" sid="152960508447137">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="154427003982788" speed="5">
+                    <frame duration="1" hotspotX="0.51087" hotspotY="0.512195" original-source="C:\Users\ikimu\Downloads\Basic_GUI_Bundle\Icons\Icon_Small_WhiteOutline_HeartFull.png">
+                        <collision-poly>
+                            <point x="0.0819672" y="0.0943396" />
+                            <point x="0.491803" y="0.0754717" />
+                            <point x="0.918033" y="0.0943396" />
+                            <point x="0.967213" y="0.490566" />
+                            <point x="0.786885" y="0.754717" />
+                            <point x="0.491803" y="0.981132" />
+                            <point x="0.213115" y="0.754717" />
+                            <point x="0.0327869" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Window" sid="331128414018319">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="322157563598189" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501171" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Window.png">
+                        <collision-poly>
+                            <point x="0.0116086" y="0.0163934" />
+                            <point x="0.499171" y="0.00234192" />
+                            <point x="0.985075" y="0.0210773" />
+                            <point x="0.980099" y="0.971897" />
+                            <point x="0.0165837" y="0.976581" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextHeart" sid="606894371196902">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="key" sid="722841186646572">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="600793620713695" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\HUD\key0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\HUD\key1.png">
+                        <collision-poly>
+                            <point x="0.0853659" y="0.264151" />
+                            <point x="0.256098" y="0.490566" />
+                            <point x="0.0243902" y="0.924528" />
+                            <point x="0.0792683" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\HUD\key2.png">
+                        <collision-poly>
+                            <point x="0.0853659" y="0.264151" />
+                            <point x="0.5" y="0.113208" />
+                            <point x="0.609756" y="0.490566" />
+                            <point x="0.5" y="0.698113" />
+                            <point x="0.0243902" y="0.924528" />
+                            <point x="0.0792683" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503145" hotspotY="0.511111" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\HUD\key3.png">
+                        <collision-poly>
+                            <point x="0.0880503" y="0.311111" />
+                            <point x="0.496855" y="0.0666667" />
+                            <point x="0.962264" y="0.133333" />
+                            <point x="0.987421" y="0.488889" />
+                            <point x="0.918239" y="0.711111" />
+                            <point x="0.496855" y="0.733333" />
+                            <point x="0.0188679" y="0.933333" />
+                            <point x="0.0880503" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mushroom_3" sid="430635866080450">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="487806139352655" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Object\Mushroom_2.png">
+                        <collision-poly>
+                            <point x="0.14" y="0.170732" />
+                            <point x="0.5" y="0" />
+                            <point x="0.86" y="0.170732" />
+                            <point x="0.98" y="0.487805" />
+                            <point x="0.82" y="0.780488" />
+                            <point x="0.5" y="1" />
+                            <point x="0.18" y="0.780488" />
+                            <point x="0.02" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="yellowJewel" sid="997909177704857">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="344871862440449" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Basic_GUI_Bundle\Icons\Icon_Small_WhiteOutline_Coin.png">
+                        <collision-poly>
+                            <point x="0.170455" y="0.185434" />
+                            <point x="0.5" y="0.0506198" />
+                            <point x="0.829545" y="0.185434" />
+                            <point x="0.994318" y="0.5" />
+                            <point x="0.788352" y="0.769628" />
+                            <point x="0.5" y="0.94938" />
+                            <point x="0.211648" y="0.769628" />
+                            <point x="0.00568182" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.166667" y="0.181818" />
+                            <point x="0.5" y="0.0454545" />
+                            <point x="0.833333" y="0.181818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.791667" y="0.772727" />
+                            <point x="0.5" y="0.954545" />
+                            <point x="0.208333" y="0.772727" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Window2" sid="239190982728356">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829582199131931" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501171" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\Window.png">
+                        <collision-poly>
+                            <point x="0.0116086" y="0.0163934" />
+                            <point x="0.499171" y="0.00234192" />
+                            <point x="0.985075" y="0.0210773" />
+                            <point x="0.980099" y="0.971897" />
+                            <point x="0.0165837" y="0.976581" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="complete" sid="805262400811847">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="954122705495624" speed="5">
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\complete.png">
+                        <collision-poly>
+                            <point x="0.0827887" y="0.311475" />
+                            <point x="0.498911" y="0" />
+                            <point x="0.917211" y="0.311475" />
+                            <point x="0.923747" y="0.5" />
+                            <point x="0.954248" y="0.827869" />
+                            <point x="0.498911" y="0.606557" />
+                            <point x="0.043573" y="0.836066" />
+                            <point x="0.0784314" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TbResetGame" sid="273630158343362">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="744858887664258" speed="5">
+                    <frame duration="1" hotspotX="0.503311" hotspotY="0.503106" original-source="C:\Users\ikimu\Downloads\Basic_GUI_Bundle\Icons\Icon_Small_WhiteOutline_Return.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TbHome" sid="693306374423260">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="415013249522180" speed="5">
+                    <frame duration="1" hotspotX="0.506579" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Basic_GUI_Bundle\Icons\Icon_Small_Blank_Home.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextComplete" sid="751893148806531">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="NextLevel2" sid="396643956927756">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="906836382424710" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502959" original-source="C:\Users\ikimu\Downloads\Basic_GUI_Bundle\Icons\Icon_Small_WhiteOutline_Arrow.png">
+                        <collision-poly>
+                            <point x="0.17033" y="0.183432" />
+                            <point x="0.5" y="0.00591716" />
+                            <point x="0.802198" y="0.213018" />
+                            <point x="0.994505" y="0.497041" />
+                            <point x="0.796703" y="0.781065" />
+                            <point x="0.5" y="1" />
+                            <point x="0.17033" y="0.816568" />
+                            <point x="0.00549451" y="0.497041" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameover" sid="520132625098433">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="899200106612113" speed="5">
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Asset Game Platformer\gameover.png">
+                        <collision-poly>
+                            <point x="0.0827887" y="0.311475" />
+                            <point x="0.498911" y="0.00819672" />
+                            <point x="0.917211" y="0.311475" />
+                            <point x="0.923747" y="0.5" />
+                            <point x="0.954248" y="0.827869" />
+                            <point x="0.498911" y="0.606557" />
+                            <point x="0.043573" y="0.836066" />
+                            <point x="0.0784314" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Icon_Small_WhiteOutline_MusicOff" sid="802266557712065">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="605449351509797" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\Basic_GUI_Bundle\Icons\Icon_Small_WhiteOutline_Music.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.213415" />
+                            <point x="0.5" y="0.0182927" />
+                            <point x="0.875" y="0.121951" />
+                            <point x="1" y="0.5" />
+                            <point x="0.925" y="0.926829" />
+                            <point x="0.5" y="0.896341" />
+                            <point x="0.1125" y="0.890244" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502762" original-source="C:\Users\ikimu\Downloads\Basic_GUI_Bundle\Icons\Icon_Small_WhiteOutline_MusicOff.png">
+                        <collision-poly>
+                            <point x="0.192308" y="0.19337" />
+                            <point x="0.5" y="0.0331492" />
+                            <point x="0.950549" y="0.0497238" />
+                            <point x="0.82967" y="0.828729" />
+                            <point x="0.0604396" y="0.939227" />
+                            <point x="0.0934066" y="0.497238" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Icon_Small_Blank_Info" sid="621296868318689">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="583106380648001" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Basic_GUI_Bundle\Icons\Icon_Small_Blank_Info.png">
+                        <collision-poly>
+                            <point x="0.121212" y="0.0512821" />
+                            <point x="0.5" y="0" />
+                            <point x="0.878788" y="0.0512821" />
+                            <point x="0.984848" y="0.5" />
+                            <point x="0.878788" y="0.948718" />
+                            <point x="0.5" y="0.99359" />
+                            <point x="0.121212" y="0.948718" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonMulai" sid="369893792486879">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="502067957521928" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Basic_GUI_Bundle\Icons\Icon_Small_Blank_Arrow.png">
+                        <collision-poly>
+                            <point x="0.184524" y="0.201299" />
+                            <point x="0.5" y="0" />
+                            <point x="0.791667" y="0.227273" />
+                            <point x="0.994048" y="0.5" />
+                            <point x="0.791667" y="0.772727" />
+                            <point x="0.5" y="0.993506" />
+                            <point x="0.178571" y="0.805195" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextMulai" sid="242265738072558">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="HiasanDiamon" sid="161903857145746">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="964195784423984" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503067" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Basic_GUI_Bundle\Icons\Icon_Small_WhiteOutline_Diamond.png">
+                        <collision-poly>
+                            <point x="0.126506" y="0.128834" />
+                            <point x="0.5" y="0" />
+                            <point x="0.86747" y="0.134969" />
+                            <point x="0.981928" y="0.496933" />
+                            <point x="0.76506" y="0.760736" />
+                            <point x="0.5" y="1" />
+                            <point x="0.23494" y="0.760736" />
+                            <point x="0.0060241" y="0.496933" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextGemStart" sid="690838819190677">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Hiasanfall" sid="592938216771062">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="902377574539983" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503817" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Asset Game Platformer\Player Boy\player\fall.png">
+                        <collision-poly>
+                            <point x="0.184211" y="0.160305" />
+                            <point x="0.5" y="0.00763359" />
+                            <point x="0.692982" y="0.267176" />
+                            <point x="0.692982" y="0.496183" />
+                            <point x="0.929825" y="0.938931" />
+                            <point x="0.5" y="0.954198" />
+                            <point x="0.342105" y="0.70229" />
+                            <point x="0.149123" y="0.496183" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextJudul" sid="844661912530502">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="HiasanBush3" sid="938062278927112">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="445443225276599" speed="5">
+                    <frame duration="1" hotspotX="0.503759" hotspotY="0.507692" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Asset Game Platformer\Object\Bush (2).png">
+                        <collision-poly>
+                            <point x="0.135338" y="0.276923" />
+                            <point x="0.496241" y="0.0153846" />
+                            <point x="0.879699" y="0.246154" />
+                            <point x="0.932331" y="0.492308" />
+                            <point x="0.992481" y="0.984615" />
+                            <point x="0.496241" y="1" />
+                            <point x="0.0075188" y="0.984615" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HiasanMushroom_4" sid="558266987657356">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="137590353523333" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.512195" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Asset Game Platformer\Object\Mushroom_1.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.170732" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.857143" y="0.170732" />
+                            <point x="1" y="0.487805" />
+                            <point x="0.816327" y="0.780488" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.183673" y="0.780488" />
+                            <point x="0.0204082" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HiasanMushroom_5" sid="484844509009557">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518938273663312" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Asset Game Platformer\Object\Mushroom_2.png">
+                        <collision-poly>
+                            <point x="0.14" y="0.170732" />
+                            <point x="0.5" y="0" />
+                            <point x="0.86" y="0.170732" />
+                            <point x="0.98" y="0.487805" />
+                            <point x="0.82" y="0.780488" />
+                            <point x="0.5" y="1" />
+                            <point x="0.18" y="0.780488" />
+                            <point x="0.02" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HiasanMushroom_6" sid="937691743359067">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="510218630759534" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.512195" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Asset Game Platformer\Object\Mushroom_1.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.170732" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.857143" y="0.170732" />
+                            <point x="1" y="0.487805" />
+                            <point x="0.816327" y="0.780488" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.183673" y="0.780488" />
+                            <point x="0.0204082" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="392973695018562">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="254689960889797">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Asset Game Platformer\Tiles\17.png" />
+        </object-type>
+        <object-type name="TextLevel" sid="198419320998983">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextBox_Blank_Side" sid="270534102392630">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="257400893027198" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500759" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Basic_GUI_Bundle\BoxesBanners\TextBox_Blank_Side.png">
+                        <collision-poly>
+                            <point x="0.0371025" y="0.0637329" />
+                            <point x="0.5" y="0" />
+                            <point x="0.962898" y="0.0637329" />
+                            <point x="0.999117" y="0.499241" />
+                            <point x="0.899293" y="0.827011" />
+                            <point x="0.100707" y="0.827011" />
+                            <point x="0" y="0.499241" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BarJawabanA" sid="178375278510944">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="611465611326139" speed="5">
+                    <frame duration="1" hotspotX="0.503226" hotspotY="0.501493" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Basic_GUI_Bundle\Sliders\WideSlider_Blank_Scroller.png">
+                        <collision-poly>
+                            <point x="0.083871" y="0.038806" />
+                            <point x="0.496774" y="0.00298507" />
+                            <point x="0.909677" y="0.041791" />
+                            <point x="0.993548" y="0.498507" />
+                            <point x="0.916129" y="0.961194" />
+                            <point x="0.496774" y="1" />
+                            <point x="0.083871" y="0.961194" />
+                            <point x="0" y="0.498507" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ScrollBar_Blank_Scroller" sid="727309527393780">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="421211379046085" speed="5">
+                    <frame duration="1" hotspotX="0.500879" hotspotY="0.503145" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Basic_GUI_Bundle\Sliders\ScrollBar_Blank_Scroller.png">
+                        <collision-poly>
+                            <point x="0.0333919" y="0.119497" />
+                            <point x="0.499121" y="0" />
+                            <point x="0.966608" y="0.119497" />
+                            <point x="0.998243" y="0.496855" />
+                            <point x="0.966608" y="0.880503" />
+                            <point x="0.499121" y="1" />
+                            <point x="0.0333919" y="0.880503" />
+                            <point x="0" y="0.496855" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextSoalke" sid="729637848619999">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\SpriteFont_Cutrims_Regular_(72)_[1,1,1,1]_80x91.png" />
+        </object-type>
+        <object-type name="TextSoal" sid="429208914175444">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\SpriteFont_Cutrims_Regular_(72)_[1,1,1,1]_80x91.png" />
+        </object-type>
+        <object-type name="TextJawaban" sid="269005546875526">
+            <plugin id="SpriteFontPlus" />
+            <instance-variables>
+                <instance-variable name="IDJawaban" sid="801490965330730" type="number" />
+            </instance-variables>
+            <texture original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\SpriteFont_Cutrims_Regular_(72)_[1,1,1,1]_80x91.png" />
+        </object-type>
+        <object-type name="Timer" sid="455922812646854">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\SpriteFont_Cutrims_Regular_(72)_[1,1,1,1]_80x91.png" />
+        </object-type>
+        <object-type name="BarJawabanA2" sid="704183361831639">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="363616817301558" speed="5">
+                    <frame duration="1" hotspotX="0.503226" hotspotY="0.501493" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Basic_GUI_Bundle\Sliders\WideSlider_Blank_Scroller.png">
+                        <collision-poly>
+                            <point x="0.083871" y="0.038806" />
+                            <point x="0.496774" y="0.00298507" />
+                            <point x="0.909677" y="0.041791" />
+                            <point x="0.993548" y="0.498507" />
+                            <point x="0.916129" y="0.961194" />
+                            <point x="0.496774" y="1" />
+                            <point x="0.083871" y="0.961194" />
+                            <point x="0" y="0.498507" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BarJawabanB" sid="627964885381421">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="469379440472382" speed="5">
+                    <frame duration="1" hotspotX="0.503226" hotspotY="0.501493" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Basic_GUI_Bundle\Sliders\WideSlider_Blank_Scroller.png">
+                        <collision-poly>
+                            <point x="0.083871" y="0.038806" />
+                            <point x="0.496774" y="0.00298507" />
+                            <point x="0.909677" y="0.041791" />
+                            <point x="0.993548" y="0.498507" />
+                            <point x="0.916129" y="0.961194" />
+                            <point x="0.496774" y="1" />
+                            <point x="0.083871" y="0.961194" />
+                            <point x="0" y="0.498507" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BarJawabanC" sid="614859452696671">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="457138708547953" speed="5">
+                    <frame duration="1" hotspotX="0.503226" hotspotY="0.501493" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Basic_GUI_Bundle\Sliders\WideSlider_Blank_Scroller.png">
+                        <collision-poly>
+                            <point x="0.083871" y="0.038806" />
+                            <point x="0.496774" y="0.00298507" />
+                            <point x="0.909677" y="0.041791" />
+                            <point x="0.993548" y="0.498507" />
+                            <point x="0.916129" y="0.961194" />
+                            <point x="0.496774" y="1" />
+                            <point x="0.083871" y="0.961194" />
+                            <point x="0" y="0.498507" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BarJawabanD" sid="834578328647687">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="713345997764706" speed="5">
+                    <frame duration="1" hotspotX="0.503226" hotspotY="0.501493" original-source="C:\Users\ikimu\Downloads\ASSET DAN APP\Basic_GUI_Bundle\Sliders\WideSlider_Blank_Scroller.png">
+                        <collision-poly>
+                            <point x="0.083871" y="0.038806" />
+                            <point x="0.496774" y="0.00298507" />
+                            <point x="0.909677" y="0.041791" />
+                            <point x="0.993548" y="0.498507" />
+                            <point x="0.916129" y="0.961194" />
+                            <point x="0.496774" y="1" />
+                            <point x="0.083871" y="0.961194" />
+                            <point x="0" y="0.498507" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Game1_Layout.xml</layout>
+        <layout>Game3_Layout.xml</layout>
+        <layout>Game2_Layout.xml</layout>
+        <layout>Game_Start.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Game1_EventSheet.xml</event-sheet>
+        <event-sheet>Global_EventSheet.xml</event-sheet>
+        <event-sheet>GameStart_EventSheet.xml</event-sheet>
+        <event-sheet>Game2_EventSheet.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="16" />
+        <global-instance type="Touch" uid="23">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="67">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="WebStorage" uid="162" />
+        <global-instance type="Function" uid="163" />
+        <global-instance type="Browser" uid="164" />
+    </global-instances>
+    <sounds-folder>
+        <file name="victory.m4a" />
+        <file name="victory.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="1up-New Life_1.m4a" />
+        <file name="1up-New Life_1.ogg" />
+        <file name="1up-New Life_2.m4a" />
+        <file name="1up-New Life_2.ogg" />
+        <file name="1up-New Life_3.m4a" />
+        <file name="1up-New Life_3.ogg" />
+        <file name="1up-New Life_4.m4a" />
+        <file name="1up-New Life_4.ogg" />
+        <file name="1up-New Life_5.m4a" />
+        <file name="1up-New Life_5.ogg" />
+        <file name="Coin_1.m4a" />
+        <file name="Coin_1.ogg" />
+        <file name="Coin_2.m4a" />
+        <file name="Coin_2.ogg" />
+        <file name="Coin_3.m4a" />
+        <file name="Coin_3.ogg" />
+        <file name="Coin_4.m4a" />
+        <file name="Coin_4.ogg" />
+        <file name="Coin_5.m4a" />
+        <file name="Coin_5.ogg" />
+        <file name="Death_1.m4a" />
+        <file name="Death_1.ogg" />
+        <file name="Death_2.m4a" />
+        <file name="Death_2.ogg" />
+        <file name="Death_3.m4a" />
+        <file name="Death_3.ogg" />
+        <file name="Death_4.m4a" />
+        <file name="Death_4.ogg" />
+        <file name="Death_5.m4a" />
+        <file name="Death_5.ogg" />
+        <file name="Hurt_1.m4a" />
+        <file name="Hurt_1.ogg" />
+        <file name="Hurt_2.m4a" />
+        <file name="Hurt_2.ogg" />
+        <file name="Hurt_3.m4a" />
+        <file name="Hurt_3.ogg" />
+        <file name="Hurt_4.m4a" />
+        <file name="Hurt_4.ogg" />
+        <file name="Hurt_5.m4a" />
+        <file name="Hurt_5.ogg" />
+        <file name="Jump_1.m4a" />
+        <file name="Jump_1.ogg" />
+        <file name="Jump_2.m4a" />
+        <file name="Jump_2.ogg" />
+        <file name="Jump_3.m4a" />
+        <file name="Jump_3.ogg" />
+        <file name="Jump_4.m4a" />
+        <file name="Jump_4.ogg" />
+        <file name="Jump_5.m4a" />
+        <file name="Jump_5.ogg" />
+        <file name="Shoot_1.m4a" />
+        <file name="Shoot_1.ogg" />
+        <file name="Shoot_2.m4a" />
+        <file name="Shoot_2.ogg" />
+        <file name="Shoot_3.m4a" />
+        <file name="Shoot_3.ogg" />
+        <file name="Shoot_4.m4a" />
+        <file name="Shoot_4.ogg" />
+        <file name="Shoot_5.m4a" />
+        <file name="Shoot_5.ogg" />
+        <file name="Touch_1.m4a" />
+        <file name="Touch_1.ogg" />
+        <file name="Touch_2.m4a" />
+        <file name="Touch_2.ogg" />
+        <file name="Touch_3.m4a" />
+        <file name="Touch_3.ogg" />
+        <file name="Touch_4.m4a" />
+        <file name="Touch_4.ogg" />
+        <file name="Touch_5.m4a" />
+        <file name="Touch_5.ogg" />
+        <file name="High End Party.ogg" />
+        <file name="Level Up 2 (miniclip).ogg" />
+        <file name="Puzzles.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

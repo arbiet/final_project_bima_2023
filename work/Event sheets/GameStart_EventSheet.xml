@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GameStart_EventSheet</name>
+    <events>
+        <include>Global_EventSheet</include>
+        <event-block any="1" sid="284812775137536">
+            <conditions>
+                <condition id="3" name="On touched object" sid="837186334994818" type="Touch">
+                    <param id="0" name="Object">TextMulai</param>
+                </condition>
+                <condition id="3" name="On touched object" sid="784968068101765" type="Touch">
+                    <param id="0" name="Object">ButtonMulai</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="757856903418039" type="System">
+                    <param id="0" name="Layout">Game1_Layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="573625336600257">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="676459464120905" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Fix Double Background Music Played</comment>
+                <comment>Make sure you have set tag with same name tag</comment>
+                <event-block sid="390960422488767">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="637900780029633" type="Audio">
+                            <param id="0" name="Tag">&quot;Music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="339521181903345" type="Audio">
+                            <param id="0" name="Audio file">High End Party</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
