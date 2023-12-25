@@ -546,10 +546,15 @@
             </actions>
         </event-block>
         <event-group description="" sid="555113453417472" title="Restart System Group" />
-        <event-block sid="518413769925850">
+        <event-block any="1" sid="518413769925850">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="802001690976618" type="System">
                     <param id="0" name="Variable">VarHeartGlobal</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="576924846123127" type="System">
+                    <param id="0" name="Variable">VarTimer</param>
                     <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -594,6 +599,10 @@
                     <param id="0" name="Variable">VarDataSoal</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="-9" name="Set value" sid="622525877522778" type="System">
+                    <param id="0" name="Variable">GameMulai</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="776907603678189">
@@ -631,6 +640,10 @@
                 </action>
                 <action id="0" name="Set text" sid="268570785764190" type="TextComplete">
                     <param id="0" name="Text">&quot;MISI SELESAI&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="943459675936610" type="System">
+                    <param id="0" name="Variable">GameMulai</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -679,6 +692,10 @@
                             <param id="0" name="Variable">VarDataSoal</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="590864573140987" type="System">
+                            <param id="0" name="Variable">GameMulai</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="553151848083812">
@@ -704,6 +721,10 @@
                             <param id="0" name="Variable">VarDataSoal</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="913707541678084" type="System">
+                            <param id="0" name="Variable">GameMulai</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="457319789233560">
@@ -728,6 +749,10 @@
                         <action id="-9" name="Set value" sid="832560486813732" type="System">
                             <param id="0" name="Variable">VarDataSoal</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="479448500435035" type="System">
+                            <param id="0" name="Variable">GameMulai</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -779,15 +804,11 @@
                             <param id="0" name="Variable">VarDataSoal</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="182693964541844" type="System">
+                            <param id="0" name="Variable">GameMulai</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
-                </event-block>
-                <event-block sid="473130544477522">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="585252547876440">
-                    <conditions />
-                    <actions />
                 </event-block>
             </sub-events>
         </event-block>
